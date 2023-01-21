@@ -30,7 +30,7 @@ export function NavBar(props: NavBarProps) {
           <StyledSearchButon
             onClick={onClickSearch}
           >
-            <StyledSearchIcon className="searchIcon" />
+            <StyledSearchIcon  />
           </StyledSearchButon>
         </StyledCenterBox>
       </StyledwrapperBox>
