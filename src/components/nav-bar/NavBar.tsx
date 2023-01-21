@@ -2,6 +2,7 @@ import { Form } from "react-bootstrap";
 import "./navbar.css";
 import logo from "../../images/YouTube-Logo.wine.svg";
 import SearchIcon from "@mui/icons-material/Search";
+import { StyledContainerNavBarBox } from "./NavBarStyle";
 
 export interface NavBarProps {
   searchInpUt: string;
@@ -13,7 +14,7 @@ export function NavBar(props: NavBarProps) {
   const { onchangeSearchInput, onClickSearch, searchInpUt } = props;
 
   return (
-    <nav className="navbar">
+    <StyledContainerNavBarBox >
       <div className="wrapper d-flex space-between justify-content align-items">
         <div className="navbar__left">
           <img
@@ -40,7 +41,7 @@ export function NavBar(props: NavBarProps) {
           </button>
         </div>
       </div>
-    </nav>
+    </StyledContainerNavBarBox>
   );
 }
 export default NavBar;

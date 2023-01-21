@@ -15,13 +15,21 @@ export function ChannelName(props: ChannelNameProps) {
   const {  title, description , chanelPhotoUrl } = props;
 
   return (
-    <StyledChannelNameBox>
+  
+       <StyledChannelNameBox>
+          {
+      chanelPhotoUrl &&
+      <>
          <StyledChannelImg src={chanelPhotoUrl}/>
          <StyledInfoBox>
         <StyledInfoTypography>{title}</StyledInfoTypography>
         <StyledInfoTypography>{description}</StyledInfoTypography>
       </StyledInfoBox>
+      </>
+       }
     </StyledChannelNameBox>
+   
+   
   );
 }
 export default ChannelName;

@@ -1,14 +1,16 @@
-import {  Box, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import styled from "styled-components";
 
 export const StyledChannelNameBox = styled(Box)`
   display: none;
   @media screen and (max-width: 768px) {
     display: flex;
-    // justify-content: center;
+    justify-content: center;
     margin-bottom: 30px;
-        margin-top: 30px;
-
+    margin-top: 30px;
+    align-items: center;
+    width: 80%;
+    margin-inline-start: 39px;
   }
 `;
 
