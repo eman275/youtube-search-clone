@@ -63,9 +63,8 @@ function Home() {
         onchangeSearchInput={onchangeSearchInput}
         onClickSearch={onClickSearch}
       />
-            <StyledContainerBox><Loading/></StyledContainerBox>
 
-      {/* <StyledContainerBox>{enableLodaing()}</StyledContainerBox> */}
+      <StyledContainerBox>{enableLodaing()}</StyledContainerBox>
     </>
   );
 }
