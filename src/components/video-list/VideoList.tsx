@@ -4,21 +4,29 @@ import VideoItem from "../video-item/VideoItem";
 import { StyledContainerBox } from "./VideoListStyle";
 
 export interface VideoItemsProps {
-  results :data |undefined;
+  results: data | undefined;
 }
 
 export function VideoList(props: VideoItemsProps) {
-  const {  results } = props;
+  const { results } = props;
   const renderedVideos = results?.items.map((video: Items) => {
     return <VideoItem key={video.id.videoId} video={video} />;
   });
   return (
     <>
-      <ChannelName 
-         title={results?.items[1].snippet.channelTitle}
-        description={results?.items[0].snippet.description}
-        chanelPhotoUrl={results?.items[0].snippet.thumbnails.high.url}
-      />
+      {/* {results && (
+        <ChannelName
+          title={results?.items[1].snippet.channelTitle}
+          description={results?.items[0].snippet.description}
+          chanelPhotoUrl={results?.items[0].snippet.thumbnails.high.url}
+        />
+      )} */}
+         <ChannelName
+          title={results?.items[1].snippet.channelTitle}
+          description={results?.items[0].snippet.description}
+          chanelPhotoUrl={results?.items[0].snippet.thumbnails.high.url}
+        />
+
       <StyledContainerBox>{renderedVideos}</StyledContainerBox>
     </>
   );
