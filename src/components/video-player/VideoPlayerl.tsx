@@ -1,6 +1,4 @@
 
-
-
 export interface VideoDetailProps {
   videoId: string;
 }

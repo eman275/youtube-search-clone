@@ -38,7 +38,6 @@ function Home() {
     if (!results) {
       return;
     }
-    console.log("total", results);
     return <> {`about  ${results?.pageInfo.totalResults}  results`}</>;
   };
 
@@ -63,8 +62,9 @@ function Home() {
         onchangeSearchInput={onchangeSearchInput}
         onClickSearch={onClickSearch}
       />
+      <StyledContainerBox><Loading/></StyledContainerBox>
 
-      <StyledContainerBox>{enableLodaing()}</StyledContainerBox>
+      {/* <StyledContainerBox>{enableLodaing()}</StyledContainerBox> */}
     </>
   );
 }

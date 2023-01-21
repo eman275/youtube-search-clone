@@ -5,7 +5,10 @@ export interface LoadingProps {}
 
 export function Loading(props: LoadingProps) {
   return (
+    <>
       <Circular  />
+      <>lodaing</>
+    </>
   
   );
 }
