@@ -1,14 +1,13 @@
-import { Box } from "@mui/material";
-import { Circular } from "./loadingStyle";
+import { Circular,  StyledCircularBox } from "./loadingStyle";
 
 export interface LoadingProps {}
 
 export function Loading(props: LoadingProps) {
   return (
-    <>
+    <StyledCircularBox>
       <Circular  />
-      <>lodaing</>
-    </>
+    <>loading</>
+    </StyledCircularBox>
   
   );
 }

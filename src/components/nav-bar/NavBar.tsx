@@ -1,8 +1,5 @@
-import { Form } from "react-bootstrap";
-import "./navbar.css";
 import logo from "../../images/YouTube-Logo.wine.svg";
-import SearchIcon from "@mui/icons-material/Search";
-import { StyledContainerNavBarBox } from "./NavBarStyle";
+import { StyledCenterBox, StyledContainerNavBarBox, StyledImg, StyledLeftBox, StyledSearchButon, StyledSearchIcon, StyledwrapperBox, StylFrom } from "./NavBarStyle";
 
 export interface NavBarProps {
   searchInpUt: string;
@@ -15,32 +12,28 @@ export function NavBar(props: NavBarProps) {
 
   return (
     <StyledContainerNavBarBox >
-      <div className="wrapper d-flex space-between justify-content align-items">
-        <div className="navbar__left">
-          <img
+      <StyledwrapperBox >
+        <StyledLeftBox >
+          <StyledImg
             src={logo}
-            alt="youtube"
-            width="60px"
-            className="navbar__left__logo"
-          />
-        </div>
-        <div className="navbar__center">
-          <Form.Control
+            alt="youtubelogo"
+            width="60px"/>
+        </StyledLeftBox>
+        <StyledCenterBox >
+          <StylFrom.Control
             type="text"
-            className="navbar__center__input"
             placeholder="Search"
             onChange={(event) => onchangeSearchInput( event.target.value)}
             value={searchInpUt}
           />
 
-          <button
-            className="navbar__center__search-btn"
+          <StyledSearchButon
             onClick={onClickSearch}
           >
-            <SearchIcon className="searchIcon" />
-          </button>
-        </div>
-      </div>
+            <StyledSearchIcon className="searchIcon" />
+          </StyledSearchButon>
+        </StyledCenterBox>
+      </StyledwrapperBox>
     </StyledContainerNavBarBox>
   );
 }

@@ -4,7 +4,7 @@ import youtube from "../../apis/youtube";
 import Loading from "../loading/Loading";
 import NavBar from "../nav-bar/NavBar";
 import VideoList from "../video-list/VideoList";
-import { StyledContainerBox, StyledTotalTypography } from "./HomeStyle";
+import { StyledContainerBox } from "./HomeStyle";
 
 function Home() {
   const [searchInput, setSearchInput] = useState("");
@@ -34,25 +34,11 @@ function Home() {
     }
   }, [searchResults, searchInput]);
 
-  const total = () => {
-    if (!results) {
-      return;
-    }
-    return <> {`about  ${results?.pageInfo.totalResults}  results`}</>;
-  };
-
   const enableLodaing = () => {
     if (searchInput && !results) {
       return <Loading />;
     } else {
-      return (
-        <>
-        <StyledTotalTypography>
-        {total()}
-        </StyledTotalTypography> 
-          <VideoList  results={results} />
-        </>
-      );
+      return <VideoList results={results} />;
     }
   };
   return (
@@ -62,9 +48,7 @@ function Home() {
         onchangeSearchInput={onchangeSearchInput}
         onClickSearch={onClickSearch}
       />
-      <StyledContainerBox><Loading/></StyledContainerBox>
-
-      {/* <StyledContainerBox>{enableLodaing()}</StyledContainerBox> */}
+      <StyledContainerBox>{enableLodaing()}</StyledContainerBox>
     </>
   );
 }
