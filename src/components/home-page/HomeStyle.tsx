@@ -3,16 +3,11 @@ import styled from "styled-components";
 
 export const StyledContainerBox = styled(Box)`
   width: 100%;
-  // align-items: center;
-  // height: auto;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  @media screen and (max-width: 768px) {
-    position: relative;
-    flex-direction: column;
-    align-items: flex-start;
-  }
+  height: auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
 `;
 
 export const StyledTotalTypography = styled(Typography)`

@@ -1,4 +1,4 @@
-import { Avatar, Box, Typography } from "@mui/material";
+import {  Box, Typography } from "@mui/material";
 import styled from "styled-components";
 
 export const StyledChannelNameBox = styled(Box)`
@@ -7,6 +7,8 @@ export const StyledChannelNameBox = styled(Box)`
     display: flex;
     // justify-content: center;
     margin-bottom: 30px;
+        margin-top: 30px;
+
   }
 `;
 

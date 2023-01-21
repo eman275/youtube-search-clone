@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import { data, Items } from "../../apis/Types";
+import { data } from "../../apis/Types";
 import youtube from "../../apis/youtube";
 import Loading from "../loading/Loading";
 import NavBar from "../nav-bar/NavBar";
@@ -8,9 +8,8 @@ import { StyledContainerBox, StyledTotalTypography } from "./HomeStyle";
 
 function Home() {
   const [searchInput, setSearchInput] = useState("");
-
-  const [videos, setvideos] = useState<Items[]>([]);
   const [results, SetResults] = useState<data>();
+
   const onchangeSearchInput = (value: string) => {
     setSearchInput(value);
   };
@@ -21,7 +20,6 @@ function Home() {
         q: searchInput,
       },
     });
-    setvideos(response.data.items);
     SetResults(response.data);
   }, [searchInput]);
 
@@ -53,7 +51,7 @@ function Home() {
         <StyledTotalTypography>
         {total()}
         </StyledTotalTypography> 
-          <VideoList videos={videos} />
+          <VideoList  results={results} />
         </>
       );
     }
@@ -65,7 +63,9 @@ function Home() {
         onchangeSearchInput={onchangeSearchInput}
         onClickSearch={onClickSearch}
       />
-      <StyledContainerBox>{enableLodaing()}</StyledContainerBox>
+            <StyledContainerBox><Loading/></StyledContainerBox>
+
+      {/* <StyledContainerBox>{enableLodaing()}</StyledContainerBox> */}
     </>
   );
 }
