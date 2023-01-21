@@ -1,7 +1,5 @@
 import axios from 'axios';
-//  const KEY ='AIzaSyDruZsA-SQps5nb3TzE6tP468c0m3FAr68';
-// const KEY ='AIzaSyCwhccq6mQ084RsTid9dMC41vY1racws3Q';
-const KEY ='AIzaSyBjHb-4Bfrk3A5ql7WSj8yBHRXcOY41Aa0'
+const KEY ='AIzaSyBDcql3R-vc5p9cotbGWAkRNtd2dqnl48g'
 
 
 export default axios.create({

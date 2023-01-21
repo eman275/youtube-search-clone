@@ -3,16 +3,17 @@
 </h1>
 
 <p align="center">
-  🖊️ youtube search clone using <a href="https://reactjs.org/">React with TypeScript</a> and <a href="https://material-ui.com/">Material UI</a>
+  🖊️ youtube search clone using <a href="https://reactjs.org/">React with TypeScript</a> and <a href="https://material-ui.com/">Material UI</a>and <a href="https://styled-components.com/">styled component</a>
+  and using <a href='https://developers.google.com/youtube/v3/docs/search/list'>Use Youtube APIs to get list of search results</a>
 </p>
 <p align="center"></p>
 
 
 ## This is a  simple Todo App built using React.js with typeScript and styled using Material UI.
 
-It uses [TypeScript](https://www.typescriptlang.org/), [Context API](https://reactjs.org/docs/context.html) to manage state, [Material UI](https://material-ui.com/) for design, [`localStorage`](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) to store todos .
+It uses [TypeScript](https://www.typescriptlang.org/), [ React Hooks](https://reactjs.org/docs/hooks-intro.html) to manage state , and using <a href='https://developers.google.com/youtube/v3/docs/search/list'>Use Youtube APIs to get list of search results</a>, [Material UI](https://material-ui.com/) for design .
 
-### You can view it here: https://to-do-app-eight-sigma.vercel.app/
+### You can view it here: https://youtube-search-clone-murex.vercel.app/
 
 ##  You can:
 
@@ -21,15 +22,16 @@ It uses [TypeScript](https://www.typescriptlang.org/), [Context API](https://rea
 
 ## 🏗️ To build it
 
-1. Clone this repo by running `git clone https://github.com/eman275/to-do-App`.  //repplase url
+1. Clone this repo by running `git clone https://github.com/eman275/youtube-search-clone`.  
 2. git help docs could help you `https://git-scm.com/docs/git-help` ,
-3. `cd` into the `search-youtube` folder and run `npm i` or `yarn`.
+3. `cd` into the `youtube-search-clone` folder and run `yarn ` or `npm i`.
+4. Build `yarn run build` OR `npm run build` to build the app
 4. Run `npm start` OR `yarn start` to start the development server.
 # Getting Started with Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). //replace url
 
 Below you will find some information on how to perform common tasks.<br>
-You can find the most recent version of this guide [here](https://github.com/eman275/to-do-App/blob/master/README.md). //replase url
+You can find the most recent version of this guide [here](https://github.com/eman275/youtube-search-clone). 
 
 ## Table of Contents
 

@@ -11,7 +11,6 @@ function Home() {
 
   const [videos, setvideos] = useState<Items[]>([]);
   const [results, SetResults] = useState<data>();
-console.log('result',videos[0].snippet.channelTitle);
   const onchangeSearchInput = (value: string) => {
     setSearchInput(value);
   };
