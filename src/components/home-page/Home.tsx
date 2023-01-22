@@ -4,7 +4,7 @@ import youtube from "../../apis/youtube";
 import Loading from "../loading/Loading";
 import NavBar from "../nav-bar/NavBar";
 import VideoList from "../video-list/VideoList";
-import { StyledContainerBox } from "./HomeStyle";
+import { DividerBoxStyle, DividerStyle, StyledContainerBox } from "./HomeStyle";
 
 function Home() {
   const [searchInput, setSearchInput] = useState("");
@@ -43,6 +43,9 @@ function Home() {
   };
   return (
     <>
+    <DividerBoxStyle>
+          <DividerStyle />
+        </DividerBoxStyle>
       <NavBar
         searchInpUt={searchInput}
         onchangeSearchInput={onchangeSearchInput}

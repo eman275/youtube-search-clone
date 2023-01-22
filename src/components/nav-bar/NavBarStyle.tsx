@@ -17,7 +17,7 @@ export const StyledContainerNavBarBox = styled(Box)`
 
 export const StyledwrapperBox = styled(Box)`
   width: 100%;
-  max-width: 1250px;
+  // max-width: 1250px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
